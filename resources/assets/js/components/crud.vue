@@ -76,7 +76,8 @@
                 var vm = this
                 axios.delete('api/student/delete/' + id)
                         .then(function (response) {
-                            this.model.splice(this.model.indexOf(model.data.id), 1)
+                            //Data di DB udah ke hapus, cuma di viewnya belum ke otomatis ke remove?
+                            //this.model.splice(this.model.indexOf(id), 1)
                         }).catch(function (response) {
                             console.log(response)
                 })
