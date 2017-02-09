@@ -9,7 +9,10 @@ class Student extends Model
     protected $visible = [
       'name','nim','address','id'
     ];
+    protected $fillable = [
+        'name','address','nim'
+    ];
     public static $columns = [
-      'NIM','Name','Address'
+      'id','NIM','Name','Address'
     ];
 }
